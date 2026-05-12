@@ -11,10 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseURL = CONFIG.url;
 
   const lastTimeModify = {
-    other: "2026-05-12",
-    taxiPath: "2026-05-12",
-    transferSinglePath: "2026-05-12",
-    transferTwoWayPath: "2026-05-12",
+    other: "2026-05-13",
+    taxiPath: "2026-05-13",
+    transferSinglePath: "2026-05-13",
+    transferTwoWayPath: "2026-05-13",
   };
 
   const taxiAreaServed = Object.values(areaServed);

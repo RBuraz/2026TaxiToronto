@@ -169,42 +169,10 @@ export default function TaxiHomePage() {
     },
   ];
 
-  // Dodaj LocalBusiness schema za početnu stranicu
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": `${CONFIG.url}/#company`,
-    name: CONFIG.company.companyShortName,
-    legalName: CONFIG.company.FullName,
-    description:
-      "Profesionalna taxi služba, transferi i privatni jednodnevni izleti za Split, Trogir, Omiš, Kaštela i cijelu Dalmaciju. 24/7 dostupni, besplatni WhatsApp, svi tipovi vozila.",
-    url: `${CONFIG.url}/`,
-    telephone: CONFIG.company.phone,
-    email: CONFIG.company.email,
-    priceRange: "€€",
-    openingHours: "Mo-Su 00:00-24:00",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Petrina ulica 10A",
-      addressLocality: CONFIG.company.city,
-      postalCode: CONFIG.company.postalCode,
-      addressCountry: "HR",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 43.51501,
-      longitude: 16.44331,
-    },
-  };
+
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessSchema),
-        }}
-      />
       <main className="bg-white">
         {/* Hero sekcija - velika slika i uvod */}
         <div className="relative w-full h-150">

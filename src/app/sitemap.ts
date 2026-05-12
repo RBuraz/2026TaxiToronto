@@ -7,9 +7,8 @@ import { urlSlugify } from "@/lib/url";
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseURL = CONFIG.url;
 
-  const fromLocations = [...firstPlaces, ...secondPlaces];
+  const baseURL = CONFIG.url;
 
   const lastTimeModify = {
     other: "2026-05-12",

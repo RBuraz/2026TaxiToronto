@@ -1,5 +1,5 @@
 export const CONFIG = {
-  url: "https://www.taxi-transfer-croatia.com",
+  url: "https://www.split-taxi.com",
 
   company: {
     FullName:

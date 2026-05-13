@@ -98,6 +98,17 @@ export default function TransferForm({
 }) {
   const pathname = usePathname();
 
+  const resultsRef = useRef<HTMLDivElement>(null);
+
+  const scrollToResults = () => {
+    if (resultsRef.current) {
+      resultsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      const resultsElement = document.getElementById("transfer-results");
+      resultsElement?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   const [formData, setFormData] = useState<TransferFormData>(
     defaultFormData
       ? (defaultFormData as TransferFormData)
@@ -350,22 +361,22 @@ export default function TransferForm({
     return Number(totalOneWayPrice.toFixed(2));
   };
 
-const handleTrackedAction = async ({
-  vehicle,
-  method,
-  href,
-  totalOneWayPrice,
-  target = "_self",
-}: {
-  vehicle: VehicleOption;
-  method: "call" | "whatsapp" | "email";
-  href: string;
-  totalOneWayPrice: number;
-  target?: "_self" | "_blank";
-}) => {
-  const contact = getVehicleContact(vehicle.id);
+  const handleTrackedAction = async ({
+    vehicle,
+    method,
+    href,
+    totalOneWayPrice,
+    target = "_self",
+  }: {
+    vehicle: VehicleOption;
+    method: "call" | "whatsapp" | "email";
+    href: string;
+    totalOneWayPrice: number;
+    target?: "_self" | "_blank";
+  }) => {
+    const contact = getVehicleContact(vehicle.id);
 
-  /*
+    /*
   await trackClick({
     category: "transfer",
     fullPath: pathname,
@@ -379,13 +390,13 @@ const handleTrackedAction = async ({
   });
   */
 
-  if (target === "_blank") {
-    window.open(href, "_blank", "noopener,noreferrer");
-    return;
-  }
+    if (target === "_blank") {
+      window.open(href, "_blank", "noopener,noreferrer");
+      return;
+    }
 
-  window.location.href = href;
-};
+    window.location.href = href;
+  };
 
   const getLocationIcon = (types: string[] = [], description: string = "") => {
     const descLower = description.toLowerCase();
@@ -792,6 +803,9 @@ const handleTrackedAction = async ({
       );
       setDistanceResult(result);
       setShowResults(true);
+
+      // Aktiviraj scroll nakon uspješnog requesta
+      setTimeout(scrollToResults, 100); // 100ms delay da se DOM ažurira
     } catch {
       alert("Error calculating distance. Please try again.");
     } finally {
@@ -1690,7 +1704,7 @@ const handleTrackedAction = async ({
             </div>
 
             {showResults && distanceResult && (
-              <div className="bg-white rounded-2xl shadow-xl p-6 mb-6">
+              <div id="transfer-results" ref={resultsRef} className="bg-white rounded-2xl shadow-xl p-6 mb-6">
                 <p className="text-2xl font-bold text-gray-800 mb-6">
                   Transfer Details
                 </p>

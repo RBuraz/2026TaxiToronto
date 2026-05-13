@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "TORONTO taxi & transfer service Split | Airport taxi Split | Taxi Split",
+    "TORONTO taxi &  service Split | Airport taxi Split | Taxi Split",
   description:
     "Taxi service in Split, Split airport and surroundings. Book your taxi ride with us and experience reliable and comfortable transportation throughout the city. Our professional drivers are ready to take you wherever you need to go, whether it's for business or leisure. Enjoy a hassle-free taxi experience with our easy booking system and competitive rates.",
 

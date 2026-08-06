@@ -24,6 +24,14 @@ const tomislav_baricevic: ContactInfo = {
   whatsApp: "385955086993",
 };
 
+const josip_markovic: ContactInfo = {
+  company: "StayCool",
+  driver: "josip_markovic",
+  email: "josip.markovic.split@gmail.com",
+  phone: "385958159720",
+  whatsApp: "385958159720",
+};
+
 const radoslav_burazin: ContactInfo = {
   company: "PRINCIPIS",
   driver: "radoslav_burazin",
@@ -42,7 +50,7 @@ const mladen_nincevic: ContactInfo = {
 
 export const transferVehicleContacts: Record<TransferVehicleKey, ContactInfo> =
   {
-    car: tomislav_baricevic, // Zamijenjeno s radoslav_burazin
+    car: josip_markovic,
     monovolumen: tomislav_baricevic,
     sClass: mladen_nincevic,
     van: tomislav_baricevic,

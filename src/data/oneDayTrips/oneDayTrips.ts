@@ -46,6 +46,14 @@ const tomislav_baricevic: ContactInfo = {
   whatsApp: "385955086993",
 };
 
+const josip_markovic: ContactInfo = {
+  company: "StayCool",
+  driver: "josip_markovic",
+  email: "josip.markovic.split@gmail.com",
+  phone: "385958159720",
+  whatsApp: "385958159720",
+};
+
 const radoslav_burazin: ContactInfo = {
   company: "PRINCIPIS",
   driver: "radoslav_burazin",
@@ -192,7 +200,7 @@ export const oneDayTripsDestinations: Record<string, OneDayTripDestination> = {
 export const oneDayTripsContact: OneDayTripsContact = {
   "krka-national-park": {
     car: {
-      ...tomislav_baricevic, // Zamijenjeno s radoslav_burazin
+      ...josip_markovic,
       price: 220,
     },
     monovolumen: {
@@ -211,7 +219,7 @@ export const oneDayTripsContact: OneDayTripsContact = {
 
   "plitvice-lakes": {
     car: {
-      ...tomislav_baricevic, // Zamijenjeno s radoslav_burazin
+      ...josip_markovic,
       price: 500,
     },
     monovolumen: {
@@ -230,7 +238,7 @@ export const oneDayTripsContact: OneDayTripsContact = {
 
   dubrovnik: {
     car: {
-      ...tomislav_baricevic, // Zamijenjeno s radoslav_burazin
+      ...josip_markovic,
       price: 500,
     },
     monovolumen: {
@@ -249,7 +257,7 @@ export const oneDayTripsContact: OneDayTripsContact = {
 
   zadar: {
     car: {
-      ...tomislav_baricevic, // Zamijenjeno s radoslav_burazin
+      ...josip_markovic,
       price: 400,
     },
     monovolumen: {

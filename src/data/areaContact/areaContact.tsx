@@ -66,14 +66,6 @@ const tomislav_baricevic: ContactInfo = {
   whatsApp: "385955086993",
 };
 
-const josip_markovic: ContactInfo = {
-  company: "StayCool",
-  driver: "josip_markovic",
-  email: "josip.markovic.split@gmail.com",
-  phone: "385958159720",
-  whatsApp: "385958159720",
-};
-
 const radoslav_burazin: ContactInfo = {
   company: "PRINCIPIS",
   driver: "radoslav_burazin",
@@ -177,7 +169,7 @@ export const areaServed = {
 
 export const areaContact: AreaContact = {
   split: {
-    car: josip_markovic,
+    car: tomislav_baricevic,
     monovolumen: tomislav_baricevic,
     van: tomislav_baricevic,
     vClass: tomislav_baricevic,
@@ -185,7 +177,7 @@ export const areaContact: AreaContact = {
     bus: tomislav_baricevic,
   },
   "split-airport": {
-    car: josip_markovic,
+    car: tomislav_baricevic,
     monovolumen: tomislav_baricevic,
     van: tomislav_baricevic,
     vClass: tomislav_baricevic,
@@ -193,7 +185,7 @@ export const areaContact: AreaContact = {
     bus: tomislav_baricevic,
   },
   "split-ferry-port": {
-    car: josip_markovic,
+    car: tomislav_baricevic,
     monovolumen: tomislav_baricevic,
     van: tomislav_baricevic,
     vClass: tomislav_baricevic,
@@ -201,7 +193,7 @@ export const areaContact: AreaContact = {
     bus: tomislav_baricevic,
   },
   trogir: {
-    car: josip_markovic,
+    car: tomislav_baricevic,
     monovolumen: tomislav_baricevic,
     van: tomislav_baricevic,
     vClass: tomislav_baricevic,
@@ -209,7 +201,7 @@ export const areaContact: AreaContact = {
     bus: tomislav_baricevic,
   },
   omis: {
-    car: josip_markovic,
+    car: tomislav_baricevic,
     monovolumen: tomislav_baricevic,
     van: tomislav_baricevic,
     vClass: tomislav_baricevic,
@@ -217,7 +209,7 @@ export const areaContact: AreaContact = {
     bus: tomislav_baricevic,
   },
   dugopolje: {
-    car: josip_markovic,
+    car: tomislav_baricevic,
     monovolumen: tomislav_baricevic,
     van: tomislav_baricevic,
     vClass: tomislav_baricevic,
@@ -225,7 +217,7 @@ export const areaContact: AreaContact = {
     bus: tomislav_baricevic,
   },
   klis: {
-    car: josip_markovic,
+    car: tomislav_baricevic,
     monovolumen: tomislav_baricevic,
     van: tomislav_baricevic,
     vClass: tomislav_baricevic,
@@ -233,7 +225,7 @@ export const areaContact: AreaContact = {
     bus: tomislav_baricevic,
   },
   kastela: {
-    car: josip_markovic,
+    car: tomislav_baricevic,
     monovolumen: tomislav_baricevic,
     van: tomislav_baricevic,
     vClass: tomislav_baricevic,
@@ -241,7 +233,7 @@ export const areaContact: AreaContact = {
     bus: tomislav_baricevic,
   },
   podstrana: {
-    car: josip_markovic,
+    car: tomislav_baricevic,
     monovolumen: tomislav_baricevic,
     van: tomislav_baricevic,
     vClass: tomislav_baricevic,
@@ -249,7 +241,7 @@ export const areaContact: AreaContact = {
     bus: tomislav_baricevic,
   },
   solin: {
-    car: josip_markovic,
+    car: tomislav_baricevic,
     monovolumen: tomislav_baricevic,
     van: tomislav_baricevic,
     vClass: tomislav_baricevic,
